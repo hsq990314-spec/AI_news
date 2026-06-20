@@ -1,0 +1,1154 @@
+{
+  "lastUpdated": "2026-06-20T11:14:01.382Z",
+  "categories": {
+    "coding": {
+      "name": "代码编写",
+      "icon": "🖥️",
+      "news": [
+        {
+          "id": "hn_48518969",
+          "title": "AI coding at home without going broke",
+          "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-13T16:45:03Z",
+          "score": 351,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48527946",
+          "title": "Ponytail – make your AI agent think like the laziest senior dev in the room",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-14T15:08:17Z",
+          "score": 95,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48558696",
+          "title": "The octopus architecture for AI agents",
+          "url": "https://blog.goodman.dev/blog/octopus-agent-architecture/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-16T17:24:45Z",
+          "score": 22,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48602862",
+          "title": "Hide Secrets from AI Agents and NPM install using Airgap",
+          "url": "https://sauleau.com/notes/airgap-security-for-the-modern-ai-age.html",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-19T20:24:59Z",
+          "score": 19,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48588072",
+          "title": "Securing the Future of AI Agents",
+          "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-18T16:44:04Z",
+          "score": 14,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48578535",
+          "title": "Estonia assigns personal ID numbers to AI agents to grant them \"authorizations\"",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-17/estonia-to-grant-ai-bots-legal-rights-with-personal-id-numbers",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-17T23:35:53Z",
+          "score": 9,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48598906",
+          "title": "Temporary Cloudflare Accounts for AI Agents",
+          "url": "https://blog.cloudflare.com/temporary-accounts/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-19T14:17:59Z",
+          "score": 8,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48583236",
+          "title": "Unreal Engine 5.8 adds MCP server for AI agents",
+          "url": "https://www.unrealengine.com/news/unreal-engine-5-8-is-now-available",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-18T10:12:16Z",
+          "score": 8,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48575480",
+          "title": "Lessons Learnt from Writing an AI Agent",
+          "url": "https://www.browserless.io/blog/writing-an-ai-agent",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-17T19:24:04Z",
+          "score": 8,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48565505",
+          "title": "Microsoft Weighs DeepSeek for Copilot Cowork",
+          "url": "https://www.axios.com/2026/06/16/microsoft-copilot-cowork-tokenmaxxing-cowork",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-17T03:56:36Z",
+          "score": 8,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48543999",
+          "title": "Stack Overflow Is Being Reborn as a Back-End Service for AI Agents",
+          "url": "https://devops.com/stack-overflow-is-being-reborn-as-a-back-end-service-for-ai-agents/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-15T16:54:17Z",
+          "score": 7,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48540768",
+          "title": "WSP WordPress MCP – Connect AI Agents to WordPress",
+          "url": "https://github.com/bilalnaseer/wsp-wordpress-mcp",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-15T13:12:39Z",
+          "score": 7,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48525761",
+          "title": "Show HN: Velyr – an AI agent that finds and fixes conversion leaks on your site",
+          "url": "https://velyr.io/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-14T10:00:55Z",
+          "score": 7,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48552890",
+          "title": "SearchLeak: We Turned M365 Copilot into a One-Click Data Exfiltration Weapon",
+          "url": "https://www.varonis.com/blog/searchleak",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-16T09:53:48Z",
+          "score": 6,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48544496",
+          "title": "Multi-board (Arduino, esp32,pi) emulator with an in-canvas AI Agent",
+          "url": "https://velxio.dev/v3/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-15T17:32:50Z",
+          "score": 6,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48555139",
+          "title": "Critical Copilot vulnerability allowed hackers to steal 2FA code from users",
+          "url": "https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-16T13:37:58Z",
+          "score": 5,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48554898",
+          "title": "Show HN: AWF – run parallel AI coding agents, each in its own Docker workspace",
+          "url": "https://github.com/dimileeh/agent-workspace-fabric",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-16T13:21:51Z",
+          "score": 5,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48554018",
+          "title": "SpaceX Will Buy AI Coding Firm Cursor for $60B",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/06/16/spacex-will-buy-ai-coding-firm-cursor-for-60-billion/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-16T12:14:11Z",
+          "score": 5,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48538373",
+          "title": "The Cloudflare for Autonomous AI Agents",
+          "url": "https://github.com/tkngate/tkngate",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-15T08:42:05Z",
+          "score": 5,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48603118",
+          "title": "A free book on operating AI coding tools (no signup, source on GitHub)",
+          "url": "https://dive.vladyslavpodoliako.com/",
+          "source": "HackerNews",
+          "category": "coding",
+          "timestamp": "2026-06-19T20:52:12Z",
+          "score": 4,
+          "lang": "en"
+        }
+      ]
+    },
+    "image": {
+      "name": "图像技术",
+      "icon": "🎨",
+      "news": [
+        {
+          "id": "hn_48603485",
+          "title": "Computer Vision – Lecture 1.1 (Introduction: Organization) [video]",
+          "url": "https://www.youtube.com/watch?v=YW1cIaOBkI8",
+          "source": "HackerNews",
+          "category": "image",
+          "timestamp": "2026-06-19T21:32:15Z",
+          "score": 2,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48582630",
+          "title": "Midjourney Medical goes from AI image generation to full-body ultrasounds",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
+          "source": "HackerNews",
+          "category": "image",
+          "timestamp": "2026-06-18T08:48:01Z",
+          "score": 2,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48546320",
+          "title": "AI Image Generation from CFML in One Function Call",
+          "url": "https://blog.kukiel.dev/posts/cfml-ai-images-with-cloudflare.html",
+          "source": "HackerNews",
+          "category": "image",
+          "timestamp": "2026-06-15T20:03:09Z",
+          "score": 2,
+          "lang": "en"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "本地AI工作台Hermes-Studio：一体化部署与多模态文件处理实践",
+          "url": "https://blog.csdn.net/weixin_27155667/article/details/161028641",
+          "source": "CSDN",
+          "category": "image",
+          "timestamp": "2026-06-20T11:10:29.707Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "qbit_aHR0cHM6Ly93d3cucWJp",
+          "title": "全员本科生！何恺明组新作：文生图，258M参数就够了",
+          "url": "https://www.qbitai.com/2026/06/436518.html",
+          "source": "量子位",
+          "category": "image",
+          "timestamp": "2026-06-20T11:10:29.252Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "AI催生的新职业|AI动画工制作员让创意 “一帧成真” - 荆楚网",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE52cnVWYUZhS2g3dEh3YXNKZnNoNGFuZ1Q3Rzg4aDI5MHMyaGZMNURxblNnNy1QTF96WXVQSDVhZmZCRU1BczZmdVlQWjJVY0p5ZlV1SHVUM3dWanhscDVjZVR6bzlIRmlKU0NKbkFnbncwUQ?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2026-06-20T10:09:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "rss_aHR0cHM6Ly93d3cudGhl",
+          "title": "Who decides when AI is too dangerous?",
+          "url": "https://www.theverge.com/podcast/951542/anthropic-claude-fable-5-mythos-ban-pentagon-ai-regulation-trump",
+          "source": "The Verge",
+          "category": "image",
+          "timestamp": "2026-06-18T14:00:00.000Z",
+          "score": 0,
+          "lang": "en"
+        },
+        {
+          "id": "rss_aHR0cHM6Ly93d3cudGhl",
+          "title": "Midjourney goes from generating cat images to full-body ultrasound scans",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan",
+          "source": "The Verge",
+          "category": "image",
+          "timestamp": "2026-06-18T03:12:31.000Z",
+          "score": 0,
+          "lang": "en"
+        },
+        {
+          "id": "osc_aHR0cHM6Ly93d3cub3Nj",
+          "title": "字节跳动发布 Seedance 2.0 Mini 视频生成模型",
+          "url": "https://www.oschina.net/news/459778",
+          "source": "开源中国",
+          "category": "image",
+          "timestamp": "2026-06-16T10:25:23.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "中国第一、全球第二！HiDream-O1-Image-1.5 登顶文生图榜单，超越谷歌、英伟达 - 量子位",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5hb2VLM3NQSzRhY2JNUjQyV0VFa19CMDhQLUxqSEs3SUFtS19iZUw3M3dQZUJKbmlVbm1SQzJ2bzBOWVVaYnR2X1ZWMVNnUlpzcEY5YQ?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2026-06-10T07:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "Microsoft推出自研图像生成模型MAI-Image-2.5，Arena文生图评测列全球第3 - 디지털투데이",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaEZtUG51MDJ5LTNXbnJ4QmllVVI1TXhJelZ3c09QV2hPSGUwU2s1UGplaUEtb1ZyYmM1eHkya0RuV0JrMzJGMngyS0dUWmdQRTZTaEtlMVNtSGVwVHJEejRtLWJ1dEJGRXl6TWZMdWlONDJSbE5hZWhzU1ZxeVZ4QmdjWUc0R3VoSHNYS2t3NmVVTTAtczl3b3UxZUNEQXBMSkZwbEo4V20zdUhDRGFpZDhWc1B1alRGWUdDd2tObw?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2026-05-28T07:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "Nano Banana 2发布：图像生成下半场比拼“世界知识” - 36 Kr",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ta1YzbUtJQXItVW1hSklzTkFkRmljanZoOVd2Q2hmdi1QTWtUUG9YTWNZaDg3M2ZUb2RJZHB2S25QQktWRlRpamxyekxXd1o2OER3?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2026-02-27T08:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "源自北京的AI突破！智源多模态大模型登Nature，生成式人工智能路线统一到自回归 - ncsti.gov.cn",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jQWFRaEtFdnUyVnotQjcySm9MSHNHSVN3SE1mQVdpQ0o3YVhFUDlYR0pOOTZyaGRpVVlPSU9Jd2J0ellTMTBwbXItdW1sRUlwb2NIcm5nenhMV0dlY0x2a2ZVc0U0bE5xYWx5a25ibV8?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2026-01-30T08:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "主张AI文生图版权但无法提供生成过程记录证明智力投入 法院：证据不足予以驳回 - 中国知识产权律师网",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5BSFpzQVY5LTJ2c0VmRUFIM2lkQVEyUGhobHc4bWxnWml1SnN1MlhZZW1KZlEtOGdOaE5mbW1Yd1lpNlV5cDVxclUyQ0N4cHFHd3NWNjU2cTk?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2025-09-17T07:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "解锁AI文生图新技能：多图层+图文一致，让创意修改更自由 - Microsoft",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE05dlZmS0M3ZEVZRk5tWjZ6TGFYUlQzYXh5MzYxS0RYdFdIcllEU0pFTHFtSHlVM3pWeVFxbFdHaXFvazZIc3NBRGtmeGxjMlQwNWpYTDF1TTVNaVBpTklxeWpSQlgtZ3YtTWxYN1RHNUpDX3JSYkZ5cVF3?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2025-06-12T07:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "AI制作的图，版权到底归谁？全国首例“AI文生图”著作权案解读 - 中青在线",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE12UjJlRUJSZnlZdnUtLXVEUFE4ZHRFY2FPaVAwWDZlUHlMZmxsZGNPZFRWZDBhdGJIODZmUUhSUExnSUZMNHV6YWl0MUdOcEVxRjhadHRqc1RPNkdNTWZwTHBqZzdCSTBwQXFIcEwtTnFxQQ?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2025-03-13T07:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "一条神奇的指令，DeepSeek直接文生图 - 51CTO",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAyd0Q5a3pzck4xSTJoSFlVa3gwSWtfVUp4Z3NYSHZMLW1VUTY2eVFPNl81T0xIdzZrSVhkQU92Ym5EY3V2WEFSYWhiYVdOc0VPWmtJ?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2025-03-11T07:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "更懂中文还兼顾SD生态，360开源文生图模型结构，寡姐秒变中国新娘 - 51CTO",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LV2lCclAzT2R3MFdta1N3cWNNRkpMZlk0RFdhbGtMTFpaeUl2UlR1dFVDV2s1QVpyUEZnaGJtT0RnOTgwVTdqd01CeWZYZm1JTmow?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2024-12-19T08:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "性感女巫风潮：玩家热评Grok文生图生成能力 - Sohu",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE13aG1ON3J6Mk14VzdMMlJTSkV3NnE5cE1aYzVfNm1OdDZBSmtZLVdBbHhXNWY3QnYwRE5WUXE5UWhLRWwwelhZOHNMcE9pMC16SDAyaQ?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2024-12-08T08:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "cnrss_aHR0cHM6Ly9uZXdzLmdv",
+          "title": "文生图 AI 工具 Midjourney 开放网页版，新用户附赠 25 张免费试用额度 - C114通信网",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54ckF1UnJaUXktOXRueVI1TWdQcjJ3anRDSHVLdE5oVERPdlBjcUNwTTJKYWZkVmtMSFBwNFJQZy1DUmRSQmZhM0wyekZBRko5YUpzM0pmM1M?oc=5",
+          "source": "Google新闻",
+          "category": "image",
+          "timestamp": "2024-08-23T07:00:00.000Z",
+          "score": 0,
+          "lang": "cn"
+        }
+      ]
+    },
+    "data": {
+      "name": "数据分析",
+      "icon": "📊",
+      "news": [
+        {
+          "id": "hn_48572553",
+          "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+          "url": "https://github.com/Adam-CAD/CADAM",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-17T16:14:04Z",
+          "score": 211,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48578894",
+          "title": "ChatGPT's image generator can be manipulated to produce violent, sexual content",
+          "url": "https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-18T00:24:04Z",
+          "score": 120,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48545569",
+          "title": "LLMs Will Replace 8-Track Duplication Engineers",
+          "url": "https://bbenchoff.github.io/pages/8Tracks.html",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-15T19:00:08Z",
+          "score": 50,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48569963",
+          "title": "Show HN: Ferrix AI – Agentic Product Management Platform",
+          "url": "https://ferrix.ai/",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-17T13:05:57Z",
+          "score": 6,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48553126",
+          "title": "Agentic AI PRs sit in the review queue 5.3x longer than unassisted ones",
+          "url": "https://blog.codacy.com/ai-breaking-code-review-how-engineering-teams-survive-pr-bottleneck",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-16T10:29:55Z",
+          "score": 5,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48606434",
+          "title": "The New Calculus of AI-Based Coding",
+          "url": "https://blog.joemag.dev/2025/10/the-new-calculus-of-ai-based...",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-20T04:51:01Z",
+          "score": 3,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48572127",
+          "title": "Ask HN: Which AI subscription is worth paying for now?",
+          "url": "https://news.ycombinator.com/item?id=48572127",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-17T15:47:34Z",
+          "score": 3,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48544117",
+          "title": "Ask HN: Specialization to stay relevant in the age of AI",
+          "url": "https://news.ycombinator.com/item?id=48544117",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-15T17:02:18Z",
+          "score": 2,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48544106",
+          "title": "Ask HN: Can you stay relevant against AI via specialization",
+          "url": "https://news.ycombinator.com/item?id=48544106",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-15T17:01:23Z",
+          "score": 2,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48540094",
+          "title": "Show HN: StoryMotion – an editor for whiteboard explainer animations",
+          "url": "https://storymotion.video",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-15T12:05:26Z",
+          "score": 2,
+          "lang": "en"
+        },
+        {
+          "id": "hn_48527480",
+          "title": "I built a bookkeeping app for UK sole traders as a new developer using AI",
+          "url": "https://news.ycombinator.com/item?id=48527480",
+          "source": "HackerNews",
+          "category": "data",
+          "timestamp": "2026-06-14T14:24:30Z",
+          "score": 2,
+          "lang": "en"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "DooTask 1.3.38 版本更新：MCP 服务器与 AI 工具深度融合，开启任务管理新体验",
+          "url": "https://blog.csdn.net/weixin_43151418/article/details/153973879",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.708Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "别人用DeepSeek写代码，我却把它做成了AI女友(1)",
+          "url": "https://blog.csdn.net/2302_79376097/article/details/162010706",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.708Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "OpenClaw（龙虾）原理深度解析：让 AI 像人一样用电脑的本地优先 Agent 框架",
+          "url": "https://blog.csdn.net/hh1357102/article/details/159383092",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.708Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "进阶实战：HTML5+AI实现智能证件照生成工具",
+          "url": "https://blog.csdn.net/aiclaws/article/details/161913890",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.707Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "Python AI基础：Matplotlib与Seaborn数据可视化",
+          "url": "https://blog.csdn.net/COLLINSXU/article/details/161541122",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.707Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "别再只会问ChatGPT了！ToDesk AI能让电脑自己干活，远程桌面智能助理实测",
+          "url": "https://blog.csdn.net/m0_49476241/article/details/161463760",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.707Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "ELR-SELLM开发报告",
+          "url": "https://blog.csdn.net/m0_66483734/article/details/162150250",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.707Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "TimechoAI时序大模型单变量/多变量预测开发，SDK安装+可视化全套教程",
+          "url": "https://blog.csdn.net/weixin_43151418/article/details/161519985",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.707Z",
+          "score": 0,
+          "lang": "cn"
+        },
+        {
+          "id": "csdn_aHR0cHM6Ly9ibG9nLmNz",
+          "title": "让ChatGPT更懂你：个性化设置的完整指南",
+          "url": "https://blog.csdn.net/oscar999/article/details/162128637",
+          "source": "CSDN",
+          "category": "data",
+          "timestamp": "2026-06-20T11:10:29.707Z",
+          "score": 0,
+          "lang": "cn"
+        }
+      ]
+    },
+    "github-fast": {
+      "name": "快速增长",
+      "icon": "🔥",
+      "news": [
+        {
+          "id": "gh_fast_1073224795",
+          "title": "obra/superpowers: An agentic skills framework & software development methodology that works.",
+          "url": "https://github.com/obra/superpowers",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-18T22:45:11Z",
+          "score": 233764,
+          "lang": "en",
+          "meta": {
+            "stars": 233764,
+            "language": "Shell",
+            "name": "superpowers",
+            "fullName": "obra/superpowers",
+            "description": "An agentic skills framework & software development methodology that works.",
+            "forks": 20749,
+            "pushedAt": "2026-06-18T22:45:11Z"
+          }
+        },
+        {
+          "id": "gh_fast_1136590548",
+          "title": "affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "url": "https://github.com/affaan-m/ECC",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-19T02:16:07Z",
+          "score": 218524,
+          "lang": "en",
+          "meta": {
+            "stars": 218524,
+            "language": "JavaScript",
+            "name": "ECC",
+            "fullName": "affaan-m/ECC",
+            "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+            "forks": 33514,
+            "pushedAt": "2026-06-19T02:16:07Z"
+          }
+        },
+        {
+          "id": "gh_fast_1024554267",
+          "title": "NousResearch/hermes-agent: The agent that grows with you",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-20T11:02:32Z",
+          "score": 197923,
+          "lang": "en",
+          "meta": {
+            "stars": 197923,
+            "language": "Python",
+            "name": "hermes-agent",
+            "fullName": "NousResearch/hermes-agent",
+            "description": "The agent that grows with you",
+            "forks": 35077,
+            "pushedAt": "2026-06-20T11:02:32Z"
+          }
+        },
+        {
+          "id": "gh_fast_45717250",
+          "title": "tensorflow/tensorflow: An Open Source Machine Learning Framework for Everyone",
+          "url": "https://github.com/tensorflow/tensorflow",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-20T11:05:57Z",
+          "score": 195782,
+          "lang": "en",
+          "meta": {
+            "stars": 195782,
+            "language": "C++",
+            "name": "tensorflow",
+            "fullName": "tensorflow/tensorflow",
+            "description": "An Open Source Machine Learning Framework for Everyone",
+            "forks": 75200,
+            "pushedAt": "2026-06-20T11:05:57Z"
+          }
+        },
+        {
+          "id": "gh_fast_614765452",
+          "title": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-19T23:09:17Z",
+          "score": 185046,
+          "lang": "en",
+          "meta": {
+            "stars": 185046,
+            "language": "Python",
+            "name": "AutoGPT",
+            "fullName": "Significant-Gravitas/AutoGPT",
+            "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+            "forks": 46126,
+            "pushedAt": "2026-06-19T23:09:17Z"
+          }
+        },
+        {
+          "id": "gh_fast_658928958",
+          "title": "ollama/ollama: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+          "url": "https://github.com/ollama/ollama",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-19T17:12:13Z",
+          "score": 174587,
+          "lang": "en",
+          "meta": {
+            "stars": 174587,
+            "language": "Go",
+            "name": "ollama",
+            "fullName": "ollama/ollama",
+            "description": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+            "forks": 16690,
+            "pushedAt": "2026-06-19T17:12:13Z"
+          }
+        },
+        {
+          "id": "gh_fast_574523116",
+          "title": "f/prompts.chat: f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+          "url": "https://github.com/f/prompts.chat",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-20T04:33:21Z",
+          "score": 163969,
+          "lang": "en",
+          "meta": {
+            "stars": 163969,
+            "language": "HTML",
+            "name": "prompts.chat",
+            "fullName": "f/prompts.chat",
+            "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+            "forks": 21254,
+            "pushedAt": "2026-06-20T04:33:21Z"
+          }
+        },
+        {
+          "id": "gh_fast_155220641",
+          "title": "huggingface/transformers: 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+          "url": "https://github.com/huggingface/transformers",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-19T18:03:02Z",
+          "score": 161746,
+          "lang": "en",
+          "meta": {
+            "stars": 161746,
+            "language": "Python",
+            "name": "transformers",
+            "fullName": "huggingface/transformers",
+            "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+            "forks": 33557,
+            "pushedAt": "2026-06-19T18:03:02Z"
+          }
+        },
+        {
+          "id": "gh_fast_132464395",
+          "title": "Snailclimb/JavaGuide: Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+          "url": "https://github.com/Snailclimb/JavaGuide",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-17T07:06:40Z",
+          "score": 156491,
+          "lang": "en",
+          "meta": {
+            "stars": 156491,
+            "language": "JavaScript",
+            "name": "JavaGuide",
+            "fullName": "Snailclimb/JavaGuide",
+            "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+            "forks": 46150,
+            "pushedAt": "2026-06-17T07:06:40Z"
+          }
+        },
+        {
+          "id": "gh_fast_888092115",
+          "title": "microsoft/markitdown: Python tool for converting files and office documents to Markdown.",
+          "url": "https://github.com/microsoft/markitdown",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-05-26T22:41:34Z",
+          "score": 156291,
+          "lang": "en",
+          "meta": {
+            "stars": 156291,
+            "language": "Python",
+            "name": "markitdown",
+            "fullName": "microsoft/markitdown",
+            "description": "Python tool for converting files and office documents to Markdown.",
+            "forks": 10869,
+            "pushedAt": "2026-05-26T22:41:34Z"
+          }
+        },
+        {
+          "id": "gh_fast_599320067",
+          "title": "langflow-ai/langflow: Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+          "url": "https://github.com/langflow-ai/langflow",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-20T01:39:47Z",
+          "score": 149864,
+          "lang": "en",
+          "meta": {
+            "stars": 149864,
+            "language": "Python",
+            "name": "langflow",
+            "fullName": "langflow-ai/langflow",
+            "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+            "forks": 9301,
+            "pushedAt": "2026-06-20T01:39:47Z"
+          }
+        },
+        {
+          "id": "gh_fast_626805178",
+          "title": "langgenius/dify: Production-ready platform for agentic workflow development.",
+          "url": "https://github.com/langgenius/dify",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-20T09:05:46Z",
+          "score": 145904,
+          "lang": "en",
+          "meta": {
+            "stars": 145904,
+            "language": "TypeScript",
+            "name": "dify",
+            "fullName": "langgenius/dify",
+            "description": "Production-ready platform for agentic workflow development.",
+            "forks": 22946,
+            "pushedAt": "2026-06-20T09:05:46Z"
+          }
+        },
+        {
+          "id": "gh_fast_701547123",
+          "title": "open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+          "url": "https://github.com/open-webui/open-webui",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-19T23:43:24Z",
+          "score": 142334,
+          "lang": "en",
+          "meta": {
+            "stars": 142334,
+            "language": "Python",
+            "name": "open-webui",
+            "fullName": "open-webui/open-webui",
+            "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+            "forks": 20464,
+            "pushedAt": "2026-06-19T23:43:24Z"
+          }
+        },
+        {
+          "id": "gh_fast_943398999",
+          "title": "x1xhlol/system-prompts-and-models-of-ai-tools: FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+          "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-12T08:45:15Z",
+          "score": 140912,
+          "lang": "en",
+          "meta": {
+            "stars": 140912,
+            "language": null,
+            "name": "system-prompts-and-models-of-ai-tools",
+            "fullName": "x1xhlol/system-prompts-and-models-of-ai-tools",
+            "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+            "forks": 34737,
+            "pushedAt": "2026-06-12T08:45:15Z"
+          }
+        },
+        {
+          "id": "gh_fast_552661142",
+          "title": "langchain-ai/langchain: The agent engineering platform.",
+          "url": "https://github.com/langchain-ai/langchain",
+          "source": "GitHub",
+          "category": "github-fast",
+          "timestamp": "2026-06-20T09:04:38Z",
+          "score": 139746,
+          "lang": "en",
+          "meta": {
+            "stars": 139746,
+            "language": "Python",
+            "name": "langchain",
+            "fullName": "langchain-ai/langchain",
+            "description": "The agent engineering platform.",
+            "forks": 23175,
+            "pushedAt": "2026-06-20T09:04:38Z"
+          }
+        }
+      ]
+    },
+    "github-popular": {
+      "name": "热门项目",
+      "icon": "⭐",
+      "news": [
+        {
+          "id": "gh_pop_1142983825",
+          "title": "multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+          "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-01-27T03:53:13Z",
+          "score": 178996,
+          "lang": "en",
+          "meta": {
+            "stars": 178996,
+            "language": null,
+            "name": "andrej-karpathy-skills",
+            "fullName": "multica-ai/andrej-karpathy-skills",
+            "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+            "forks": 18297
+          }
+        },
+        {
+          "id": "gh_pop_1048065319",
+          "title": "thedotmack/claude-mem: Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2025-08-31T20:50:03Z",
+          "score": 83316,
+          "lang": "en",
+          "meta": {
+            "stars": 83316,
+            "language": "JavaScript",
+            "name": "claude-mem",
+            "fullName": "thedotmack/claude-mem",
+            "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+            "forks": 7209
+          }
+        },
+        {
+          "id": "gh_pop_1201173969",
+          "title": "JuliusBrussee/caveman: 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-04-04T10:03:00Z",
+          "score": 75001,
+          "lang": "en",
+          "meta": {
+            "stars": 75001,
+            "language": "JavaScript",
+            "name": "caveman",
+            "fullName": "JuliusBrussee/caveman",
+            "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+            "forks": 4231
+          }
+        },
+        {
+          "id": "gh_pop_1200597263",
+          "title": "safishamsi/graphify: AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+          "url": "https://github.com/safishamsi/graphify",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-04-03T15:49:07Z",
+          "score": 69707,
+          "lang": "en",
+          "meta": {
+            "stars": 69707,
+            "language": "Python",
+            "name": "graphify",
+            "fullName": "safishamsi/graphify",
+            "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+            "forks": 7013
+          }
+        },
+        {
+          "id": "gh_pop_1010681419",
+          "title": "shareAI-lab/learn-claude-code: Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+          "url": "https://github.com/shareAI-lab/learn-claude-code",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2025-06-29T15:34:15Z",
+          "score": 67545,
+          "lang": "en",
+          "meta": {
+            "stars": 67545,
+            "language": "Python",
+            "name": "learn-claude-code",
+            "fullName": "shareAI-lab/learn-claude-code",
+            "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+            "forks": 10981
+          }
+        },
+        {
+          "id": "gh_pop_1035029907",
+          "title": "earendil-works/pi: AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+          "url": "https://github.com/earendil-works/pi",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2025-08-09T14:03:50Z",
+          "score": 64175,
+          "lang": "en",
+          "meta": {
+            "stars": 64175,
+            "language": "TypeScript",
+            "name": "pi",
+            "fullName": "earendil-works/pi",
+            "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+            "forks": 7812
+          }
+        },
+        {
+          "id": "gh_pop_1139971460",
+          "title": "rtk-ai/rtk: CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+          "url": "https://github.com/rtk-ai/rtk",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-01-22T16:54:16Z",
+          "score": 64042,
+          "lang": "en",
+          "meta": {
+            "stars": 64042,
+            "language": "Rust",
+            "name": "rtk",
+            "fullName": "rtk-ai/rtk",
+            "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+            "forks": 3945
+          }
+        },
+        {
+          "id": "gh_pop_1052050442",
+          "title": "datawhalechina/hello-agents: 📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+          "url": "https://github.com/datawhalechina/hello-agents",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2025-09-07T09:50:24Z",
+          "score": 60495,
+          "lang": "en",
+          "meta": {
+            "stars": 60495,
+            "language": "Python",
+            "name": "hello-agents",
+            "fullName": "datawhalechina/hello-agents",
+            "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
+            "forks": 7450
+          }
+        },
+        {
+          "id": "gh_pop_1201656210",
+          "title": "MemPalace/mempalace: The best-benchmarked open-source AI memory system. And it's free.",
+          "url": "https://github.com/MemPalace/mempalace",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-04-05T01:12:07Z",
+          "score": 56043,
+          "lang": "en",
+          "meta": {
+            "stars": 56043,
+            "language": "Python",
+            "name": "mempalace",
+            "fullName": "MemPalace/mempalace",
+            "description": "The best-benchmarked open-source AI memory system. And it's free.",
+            "forks": 7258
+          }
+        },
+        {
+          "id": "gh_pop_1147094660",
+          "title": "HKUDS/nanobot: Lightweight, open-source AI agent for your tools, chats, and workflows.",
+          "url": "https://github.com/HKUDS/nanobot",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-02-01T07:16:15Z",
+          "score": 44474,
+          "lang": "en",
+          "meta": {
+            "stars": 44474,
+            "language": "Python",
+            "name": "nanobot",
+            "fullName": "HKUDS/nanobot",
+            "description": "Lightweight, open-source AI agent for your tools, chats, and workflows.",
+            "forks": 7857
+          }
+        },
+        {
+          "id": "gh_pop_1031059905",
+          "title": "abhigyanpatwari/GitNexus: GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+          "url": "https://github.com/abhigyanpatwari/GitNexus",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2025-08-02T23:20:31Z",
+          "score": 42487,
+          "lang": "en",
+          "meta": {
+            "stars": 42487,
+            "language": "TypeScript",
+            "name": "GitNexus",
+            "fullName": "abhigyanpatwari/GitNexus",
+            "description": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
+            "forks": 4801
+          }
+        },
+        {
+          "id": "gh_pop_1129940957",
+          "title": "chopratejas/headroom: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+          "url": "https://github.com/chopratejas/headroom",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-01-07T19:58:51Z",
+          "score": 40133,
+          "lang": "en",
+          "meta": {
+            "stars": 40133,
+            "language": "Python",
+            "name": "headroom",
+            "fullName": "chopratejas/headroom",
+            "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+            "forks": 2743
+          }
+        },
+        {
+          "id": "gh_pop_1128123594",
+          "title": "volcengine/OpenViking: OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving.",
+          "url": "https://github.com/volcengine/OpenViking",
+          "source": "GitHub",
+          "category": "github-popular",
+          "timestamp": "2026-01-05T07:11:17Z",
+          "score": 25839,
+          "lang": "en",
+          "meta": {
+            "stars": 25839,
+            "language": "Python",
+            "name": "OpenViking",
+            "fullName": "volcengine/OpenViking",
+            "description": "OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving.",
+            "forks": 2001
+          }
+        }
+      ]
+    }
+  }
+}

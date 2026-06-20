@@ -282,48 +282,183 @@ async function fetchChineseRSSFeeds() {
   return news;
 }
 
-async function fetchGitHubTrending() {
+// Fetch fast-growing GitHub repos: pushed within 2 months, modest stars (500~5000)
+async function fetchGitHubFastGrowing() {
   const news = [];
-  try {
-    const oneWeekAgo = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString().split('T')[0];
-    const queries = ['artificial intelligence', 'machine learning', 'deep learning', 'LLM', 'stable diffusion', 'GPT'];
-    for (const query of queries) {
-      try {
-        const response = await axios.get('https://api.github.com/search/repositories', {
-          params: { q: `${query} created:>${oneWeekAgo}`, sort: 'stars', order: 'desc', per_page: 10 },
-          headers: { 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'AI-News-Aggregator' },
-          timeout: 15000
-        });
-        if (response.data?.items) {
-          for (const repo of response.data.items) {
-            news.push({
-              id: `gh_${repo.id}`,
-              title: `${repo.full_name}: ${repo.description || 'No description'}`,
-              url: repo.html_url,
-              source: 'GitHub',
-              category: 'github',
-              timestamp: repo.created_at || new Date().toISOString(),
-              score: repo.stargazers_count || 0,
-              lang: 'en',
-              meta: {
-                stars: repo.stargazers_count,
-                language: repo.language,
-                name: repo.name,
-                fullName: repo.full_name,
-                description: repo.description || '',
-                forks: repo.forks_count
-              }
-            });
-          }
+  const seenIds = new Set();
+  const twoMonthsAgo = new Date(Date.now() - 60 * 24 * 3600 * 1000).toISOString().split('T')[0];
+  const minStars = 500;
+
+  const queries = [
+    'AI agent', 'artificial intelligence', 'machine learning',
+    'deep learning', 'LLM', 'stable diffusion', 'GPT', 'RAG',
+    'multimodal', 'fine-tuning', 'computer vision', 'transformer',
+    'diffusion', 'autonomous', 'chatbot', 'langchain', 'embedding',
+    'vector database', 'LLM application', 'open source AI'
+  ];
+
+  for (const query of queries) {
+    try {
+      await new Promise(resolve => setTimeout(resolve, 1200));
+      const response = await axios.get('https://api.github.com/search/repositories', {
+        params: { q: `${query} pushed:>${twoMonthsAgo} stars:>${minStars}`, sort: 'stars', order: 'desc', per_page: 10 },
+        headers: { 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'AI-News-Aggregator/1.0' },
+        timeout: 15000
+      });
+      if (response.data?.items) {
+        for (const repo of response.data.items) {
+          if (seenIds.has(repo.full_name)) continue;
+          seenIds.add(repo.full_name);
+          const description = repo.description || '';
+          news.push({
+            id: `gh_fast_${repo.id}`,
+            title: `${repo.full_name}: ${description || 'No description'}`,
+            url: repo.html_url,
+            source: 'GitHub',
+            category: 'github-fast',
+            timestamp: repo.pushed_at || new Date().toISOString(),
+            score: repo.stargazers_count || 0,
+            lang: 'en',
+            meta: {
+              stars: repo.stargazers_count,
+              language: repo.language,
+              name: repo.name,
+              fullName: repo.full_name,
+              description,
+              forks: repo.forks_count,
+              pushedAt: repo.pushed_at
+            }
+          });
         }
-      } catch (error) {
-        console.error(`GitHub search error "${query}":`, error.message);
+      }
+    } catch (error) {
+      if (error.response?.status === 403) {
+        console.error(`GitHub fast-growing search error "${query}": rate limited (403)`);
+      } else {
+        console.error(`GitHub fast-growing search error "${query}":`, error.message);
+      }
+    }
+  }
+
+  // Also scrape GitHub Trending page for recently trending repos
+  try {
+    const trendingResponse = await axios.get('https://github.com/trending?since=weekly', {
+      timeout: 15000,
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+    });
+    const html = trendingResponse.data;
+    const repoPattern = /<h2[^>]*class="h3[^"]*"[^>]*>[\s\S]*?href="\/([^\/"]+\/[^\/"]+?)"[^>]*>[\s\S]*?<span[^>]*class="[^"]*octicon-star[^"]*"[^>]*>[\s\S]*?<\/span>\s*([\d,]+)/g;
+    let match;
+    while ((match = repoPattern.exec(html)) !== null) {
+      const fullName = match[1].trim();
+      const starsStr = match[2].replace(/,/g, '').trim();
+      const stars = parseInt(starsStr, 10) || 0;
+      if (fullName && stars >= minStars && !seenIds.has(fullName)) {
+        seenIds.add(fullName);
+        news.push({
+          id: `gh_fast_trend_${Buffer.from(fullName).toString('base64').slice(0, 20)}`,
+          title: `${fullName}: Trending on GitHub`,
+          url: `https://github.com/${fullName}`,
+          source: 'GitHub Trending',
+          category: 'github-fast',
+          timestamp: new Date().toISOString(),
+          score: stars,
+          lang: 'en',
+          meta: { stars, fullName, trending: true }
+        });
       }
     }
   } catch (error) {
-    console.error('GitHub trending error:', error.message);
+    console.error('GitHub Trending scrape error:', error.message);
   }
-  return news;
+
+  // Sort by stars descending, take top 15
+  news.sort((a, b) => (b.score || 0) - (a.score || 0));
+  const top = news.slice(0, 15);
+
+  if (top.length > 0) {
+    const stars = top.map(n => n.score).filter(s => s > 0);
+    console.log(`   ⭐ Fast-growing star range: ${Math.min(...stars)} ~ ${Math.max(...stars)}`);
+  }
+
+  return top;
+}
+
+// Fetch popular high-star GitHub repos: created within 1 year, stars > 3000
+async function fetchGitHubPopular() {
+  const news = [];
+  const seenIds = new Set();
+  const oneYearAgo = new Date(Date.now() - 365 * 24 * 3600 * 1000).toISOString().split('T')[0];
+  const minStars = 3000;
+
+  const queries = [
+    { q: 'artificial intelligence', minStars: 5000 },
+    { q: 'machine learning', minStars: 5000 },
+    { q: 'deep learning', minStars: 5000 },
+    { q: 'LLM', minStars: 3000 },
+    { q: 'stable diffusion', minStars: 3000 },
+    { q: 'GPT', minStars: 3000 },
+    { q: 'transformer', minStars: 3000 },
+    { q: 'computer vision', minStars: 3000 },
+    { q: 'large language model', minStars: 3000 },
+    { q: 'diffusion model', minStars: 2000 },
+    { q: 'RAG', minStars: 2000 },
+    { q: 'multimodal', minStars: 2000 },
+    { q: 'AI agent framework', minStars: 2000 },
+  ];
+
+  for (const { q, minStars: ms } of queries) {
+    try {
+      await new Promise(resolve => setTimeout(resolve, 1200));
+      const response = await axios.get('https://api.github.com/search/repositories', {
+        params: { q: `${q} stars:>${ms}`, sort: 'stars', order: 'desc', per_page: 10 },
+        headers: { 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'AI-News-Aggregator/1.0' },
+        timeout: 15000
+      });
+      if (response.data?.items) {
+        for (const repo of response.data.items) {
+          if (seenIds.has(repo.full_name)) continue;
+          seenIds.add(repo.full_name);
+          const description = repo.description || '';
+          news.push({
+            id: `gh_pop_${repo.id}`,
+            title: `${repo.full_name}: ${description || 'No description'}`,
+            url: repo.html_url,
+            source: 'GitHub',
+            category: 'github-popular',
+            timestamp: repo.created_at || new Date().toISOString(),
+            score: repo.stargazers_count || 0,
+            lang: 'en',
+            meta: {
+              stars: repo.stargazers_count,
+              language: repo.language,
+              name: repo.name,
+              fullName: repo.full_name,
+              description,
+              forks: repo.forks_count
+            }
+          });
+        }
+      }
+    } catch (error) {
+      if (error.response?.status === 403) {
+        console.error(`GitHub popular search error "${q}": rate limited (403)`);
+      } else {
+        console.error(`GitHub popular search error "${q}":`, error.message);
+      }
+    }
+  }
+
+  // Sort by stars descending, take top 15
+  news.sort((a, b) => (b.score || 0) - (a.score || 0));
+  const top = news.slice(0, 15);
+
+  if (top.length > 0) {
+    const stars = top.map(n => n.score).filter(s => s > 0);
+    console.log(`   ⭐ Popular star range: ${Math.min(...stars)} ~ ${Math.max(...stars)}`);
+  }
+
+  return top;
 }
 
 // Fetch from 量子位 (QbitAI) via web scraping
@@ -696,14 +831,14 @@ async function fetchAllNews() {
 
   const results = await Promise.allSettled([
     fetchHackerNews(), fetchRSSFeeds(), fetchChineseRSSFeeds(),
-    fetchGitHubTrending(), fetchQbitAI(), fetchAiera(),
+    fetchGitHubFastGrowing(), fetchGitHubPopular(), fetchQbitAI(), fetchAiera(),
     fetchITHome(), fetchCSDN(), fetchOSChina(),
     fetchJiqizhixin(), fetchBingNewsCN()
   ]);
 
   const sourceNames = [
-    'HackerNews', 'RSS', 'ChineseRSS', 'GitHub',
-    'QbitAI', 'Aiera', 'ITHome', 'CSDN', 'OSChina',
+    'HackerNews', 'RSS', 'ChineseRSS', 'GitHubFastGrowing',
+    'GitHubPopular', 'QbitAI', 'Aiera', 'ITHome', 'CSDN', 'OSChina',
     'Jiqizhixin', 'BingNewsCN'
   ];
 
@@ -725,19 +860,20 @@ async function fetchAllNews() {
     coding: { name: CATEGORIES.coding.name, icon: CATEGORIES.coding.icon, news: [] },
     image: { name: CATEGORIES.image.name, icon: CATEGORIES.image.icon, news: [] },
     data: { name: CATEGORIES.data.name, icon: CATEGORIES.data.icon, news: [] },
-    github: { name: '热门项目', icon: '🔥', news: [] }
+    'github-fast': { name: '快速增长', icon: '🔥', news: [] },
+    'github-popular': { name: '热门项目', icon: '⭐', news: [] }
   };
 
   for (const item of deduped) {
-    if (item.category === 'github') {
-      organized.github.news.push(item);
+    if (item.category === 'github-fast' || item.category === 'github-popular') {
+      organized[item.category].news.push(item);
     } else if (organized[item.category]) {
       organized[item.category].news.push(item);
     }
   }
 
   for (const key of Object.keys(organized)) {
-    organized[key].news = sortNews(organized[key].news).slice(0, 20);
+    organized[key].news = sortNews(organized[key].news).slice(0, key.startsWith('github') ? 15 : 20);
   }
 
   const data = { lastUpdated: new Date().toISOString(), categories: organized };

@@ -58,7 +58,8 @@ export default {
       coding: { gradient: 'linear-gradient(135deg, #00c3ff, #0080ff)', glow: 'rgba(0, 195, 255, 0.3)', accent: '#00c3ff' },
       image: { gradient: 'linear-gradient(135deg, #a855f7, #6d28d9)', glow: 'rgba(168, 85, 247, 0.3)', accent: '#a855f7' },
       data: { gradient: 'linear-gradient(135deg, #06ffd0, #00b894)', glow: 'rgba(6, 255, 208, 0.3)', accent: '#06ffd0' },
-      github: { gradient: 'linear-gradient(135deg, #ff6b35, #ff2d78)', glow: 'rgba(255, 107, 53, 0.3)', accent: '#ff6b35' }
+      'github-fast': { gradient: 'linear-gradient(135deg, #00e676, #00c853)', glow: 'rgba(0, 230, 118, 0.3)', accent: '#00e676' },
+      'github-popular': { gradient: 'linear-gradient(135deg, #ff9100, #ff6d00)', glow: 'rgba(255, 145, 0, 0.3)', accent: '#ff9100' }
     }
 
     const lastUpdated = computed(() => newsData.value?.lastUpdated || null)
@@ -70,8 +71,8 @@ export default {
       const cats = categories.value
       const result = {}
       for (const [key, cat] of Object.entries(cats)) {
-        // GitHub only shows in international tab
-        if (key === 'github') {
+        // GitHub categories only show in international tab
+        if (key === 'github-fast' || key === 'github-popular') {
           if (currentTab.value === 'en') {
             result[key] = { ...cat, news: cat.news }
           }

@@ -1,0 +1,16 @@
+{
+  "name": "ai-news-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "node-cron": "^3.0.3",
+    "rss-parser": "^3.13.0",
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

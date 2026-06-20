@@ -300,9 +300,13 @@ async function fetchGitHubFastGrowing() {
   for (const query of queries) {
     try {
       await new Promise(resolve => setTimeout(resolve, 1200));
+      const ghHeaders = { 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'AI-News-Aggregator/1.0' };
+      if (process.env.GITHUB_TOKEN) {
+        ghHeaders['Authorization'] = `token ${process.env.GITHUB_TOKEN}`;
+      }
       const response = await axios.get('https://api.github.com/search/repositories', {
         params: { q: `${query} pushed:>${twoMonthsAgo} stars:>${minStars}`, sort: 'stars', order: 'desc', per_page: 10 },
-        headers: { 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'AI-News-Aggregator/1.0' },
+        headers: ghHeaders,
         timeout: 15000
       });
       if (response.data?.items) {
@@ -410,9 +414,13 @@ async function fetchGitHubPopular() {
   for (const { q, minStars: ms } of queries) {
     try {
       await new Promise(resolve => setTimeout(resolve, 1200));
+      const ghHeaders = { 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'AI-News-Aggregator/1.0' };
+      if (process.env.GITHUB_TOKEN) {
+        ghHeaders['Authorization'] = `token ${process.env.GITHUB_TOKEN}`;
+      }
       const response = await axios.get('https://api.github.com/search/repositories', {
         params: { q: `${q} stars:>${ms}`, sort: 'stars', order: 'desc', per_page: 10 },
-        headers: { 'Accept': 'application/vnd.github.v3+json', 'User-Agent': 'AI-News-Aggregator/1.0' },
+        headers: ghHeaders,
         timeout: 15000
       });
       if (response.data?.items) {

@@ -39,6 +39,8 @@ jobs:
 
       - name: Fetch latest news
         run: node scripts/fetch-and-save.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build static site
         run: npm run build
